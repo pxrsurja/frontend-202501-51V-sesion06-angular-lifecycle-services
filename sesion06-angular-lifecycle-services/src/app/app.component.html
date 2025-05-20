@@ -1,18 +1,19 @@
 <h1>Sesion 06 Angular Lifecycle Services</h1>
 
-<h2>Demo: OnChanges y DoCheck</h2>
+<!-- <app-demo-component></app-demo-component> -->
 
-<label>
-  Cambiar valor:
-  <input [(ngModel)]="valor" placeholder="Escribe algo" />
-</label>
-<button (click)="valor = ''">Resetear valor</button>
+<!-- <app-fetch-data></app-fetch-data> -->
 
-<br><br>
+<!-- <app-timer></app-timer> -->
 
-<button (click)="tareas.push('Tarea ' + (tareas.length + 1))">Agregar tarea</button>
-<button (click)="tareas.pop()" [disabled]="tareas.length === 0">Eliminar tarea</button>
+<!-- <app-view-child></app-view-child> -->
 
-<app-start [value]="valor" [tasks]="tareas"></app-start>
+<!-- <app-parent></app-parent> -->
+
+<app-producer></app-producer>
+
+<app-consumer></app-consumer>
+
+
 
 <router-outlet />
